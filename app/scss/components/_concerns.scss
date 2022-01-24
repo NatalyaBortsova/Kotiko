@@ -1,0 +1,119 @@
+.concerns {
+    &__title {
+        font-size: 40px;
+        margin-bottom: 52px;
+
+        @include r(992) {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        @include r(768) {
+            font-size: 20px;
+        }
+
+        @include r(580) {
+            margin-bottom: 20px;
+        }
+        @include r(375) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__note {
+        display: none;
+
+        @include r(375) {
+            display: block;
+            font-weight: 600;
+            font-size: 13px;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__content {
+        position: relative;
+        margin-bottom: 45px;
+    }
+
+    &__button {
+        position: absolute;
+        right: 25px;
+        top: 13px;
+
+        &.open {
+            .concerns__icon {
+                &::after {
+                    display: block;
+                }
+            }
+        }
+
+        @include r(375) {
+            display: none;
+        }
+    }
+
+    &__icon {
+        position: relative;
+
+        &::before {
+            @include pseudo;
+            height: 2px;
+            width: 30px;
+            background-color: $accend;
+            top: 0;
+            left: 0;
+
+        }
+
+        &::after {
+            @include pseudo;
+            height: 2px;
+            width: 30px;
+            background-color: $accend;
+            top: 0;
+            left: 0;
+            transform: rotate(-90deg);
+            display: none;
+            transition: display 0.5s;
+
+        }
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: 600;
+        margin-bottom: 20px;
+        cursor: pointer;
+
+        @include r(992) {
+            font-size: 18px;
+            max-width: 700px;
+        }
+
+        @include r(768) {
+            font-size: 16px;
+            max-width: 500px;
+        }
+
+        @include r(580) {
+            max-width: 300px;
+        }
+
+    }
+
+    &__text {
+        line-height: 1.4;
+        max-width: 720px;
+
+        & p:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        &.hidden {
+            display: none;
+        }
+    }
+}

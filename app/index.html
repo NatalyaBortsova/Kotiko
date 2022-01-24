@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Котико - уютная гостиница для Вашего любимца!</title>  
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    
+<header class="header">
+    <div class="header__inner">
+        <div class="container">
+
+            <div class="scrolltop _hide">
+                <svg class="scrolltop__icon">
+                    <use xlink:href="images/sprite.svg#up"></use>
+                </svg>
+
+            </div>
+
+            <div class="header__top">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="../../images/logo.svg" alt="логотип" width="187" height="61">
+                </a>
+                <address class="address">
+                    <img class="address__decor address__decor_large" src="../../images/decor/cloud1.png" alt="облачко">
+                    <img class="address__decor address__decor_medium" src="../../images/decor/cloud2.png" alt="облачко">
+                    <img class="address__decor address__decor_small" src="../../images/decor/cloud3.png" alt="облачко">
+                    <ul class="address__list">
+                        <li class="address__item">
+                            <a class="address__link address__link_location" href="#">
+                                г. Днипро, ул. Ключевая, дом 32
+                            </a>
+                        </li>
+                        <li class="address__item address__item_schedule">
+                            Круглосуточно
+                        </li>
+                        <li class="address__item">
+                            <a class="address__link address__link_phone" href="tel:380952305599">
+                                +38 (095) 230-55-99
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+                <div class="connect-button">
+                    <a class="connect-button__link button" href="https://www.instagram.com">kotikozoohotel</a>
+                </div>
+            </div>
+
+            <div class="header__bottom">
+
+                <nav class="menu">
+                    <div class="menu__inner">
+                        <img class="menu__image" src="../../images/decor/big-pow.png" alt="меню-лапка" width="380"
+                            height="380">
+                        <img class="menu__image-guarantee" src="../../images/decor/guarantee.png" alt="гарантия">
+                        <ul class="menu__list">
+                            <li class="menu__item menu__item_numbers">
+                                <a class="menu__link" href="#numbers" data-where="anchor">
+                                    Номера <span class="menu__item-subtitle">и цены</span>
+                                </a>
+                            </li>
+                            <li class="menu__item menu__item_booking">
+                                <a class="menu__link" href="#booking" data-where="anchor">
+                                    Заявка <span class="menu__item-subtitle menu__item-subtitle_booking">на
+                                        бронирование</span>
+                                </a>
+                            </li>
+                            <li class="menu__item menu__item_video">
+                                <a class="menu__link" href="#videoBlock" data-where="anchor">Видео
+                                    <span class="menu__item-subtitle menu__item-subtitle_video">наблюдение</span>
+                                </a>
+                            </li>
+                            <li class="menu__item menu__item_payment">
+                                <a class="menu__link" href="#payment">
+                                    Оплатить
+                                </a></li>
+                            <li class="menu__item menu__item_about">
+                                <a class="menu__link" href="#about" data-where="anchor">
+                                    Всё о нас
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="registration">
+                    <h1 class="registration__title title _anim-items">
+                        Гостиница для кошек с видеонаблюдением
+                    </h1>
+                    <h2 class="registration__subtitle">
+                        Будьте спокойны за вашего питомца, пока вы в отъезде
+                    </h2>
+                    <h2 class="registration__subtitle registration__subtitle_hidden">
+                        Любовь и забота гарантированы
+                    </h2>
+
+                    <form class="registration__form" action="#" onsubmit="return formSubmit()" data-name="validate-form">
+                        <input class="registration__input" id="name" type="text" placeholder="Имя" name="name" data-name="validate-name" required>
+                        <span class="registration__feedback"></span>
+                        <input class="registration__input" id="phone" type="text" data-name="validate-phone" placeholder="Телефон" name="phone"
+                            required pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
+                        <button class="registration__button button" type="submit" data-name="validate-submit">
+                            Отправить заявку
+                        </button>
+                    </form>
+
+                    <div class="registration__message hidden">
+                        Благодарим, Ваша заявка была отправлена!
+                    </div>
+
+                </div>
+                <img class="header__bg header__bg_bottom" src="../../images/decor/cats-header.png" alt="листья"
+                    width="834" height="370">
+            </div>            
+        </div>
+        <img class="header__bg" src="../../images/decor/leaves.png" alt="листья" width="370" height="384">
+        <div class="container">
+            <div class="advantages">
+                <ul class="advantages__list">
+                    <li class="advantages__item">
+                        видеонаблюдение в режиме 24/7 и ежедневный фото/видеоотчет в мессенджеры
+                    </li>
+                    <li class="advantages__item">
+                        просторные номера с окнами
+                    </li>
+                    <li class="advantages__item">
+                        круглосуточное присутствие котоняни
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</header>
+<section class="numbers" id="numbers">
+    <div class="container">
+        <div class="numbers__top">
+            <h2 class="numbers__title title _anim-items">
+                Номера и цены
+            </h2>
+            <div class="numbers__discaunt">
+                <img class="numbers__discaunt-image" src="../../images/decor/discaunt-bage.png" alt="скидка" width="283"
+                    height="206">
+                <span class="numbers__discaunt-text">Скидка 20% до конца ноября!</span>
+            </div>
+        </div>
+
+        <div class="numbers__content">
+            <div class="numbers__slider slider">
+                <div class="slider__inner swiper">
+                    <ul class="slider__content swiper-wrapper">
+                        <li class="slider__item swiper-slide">
+                            <img class="slider__img" src="../../images/slider/img1.jpg" alt="комната для вашего любимца"
+                                width="380" height="500">
+                        </li>
+                        <li class="slider__item swiper-slide">
+                            <img class="slider__img" src="../../images/slider/img1.jpg" alt="комната для вашего любимца"
+                                width="380" height="500">
+                        </li>
+                        <li class="slider__item swiper-slide">
+                            <img class="slider__img" src="../../images/slider/img1.jpg" alt="комната для вашего любимца"
+                                width="380" height="500">
+                        </li>
+                    </ul>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <div class="slider__text numbers-info">
+                    <div class="numbers-info__content">
+                        <h3 class="numbers-info__title">
+                            Номер <span>"стандарт"</span>
+                        </h3>                        
+                            <span class="numbers-info__price">
+                                700 руб./сутки
+                            </span>                       
+                    </div>
+                    <div class="numbers-info__content">
+                        <span class="numbers-info__house">
+                            Размер номера
+                        </span>                        
+                            <span class="numbers-info__footage">
+                                1500*1500*2100 см
+                            </span>                        
+                    </div>
+                    <div class="numbers-info__content">
+                        <span class="numbers-info__house">
+                            Размер домиков
+                        </span>                        
+                            <span class="numbers-info__footage">32*32см</span>
+                            <span class="numbers-info__footage">38*32см</span>                      
+                    </div>
+                    <button class="numbers-info__button button" type="button">
+                        Забронировать
+                    </button>
+
+                    <div class="booking__submit card-book hidden">
+                        <button class="card-book__close">
+                            <svg class="card-book__icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                            </svg>
+                        </button>
+                        <form class="booking__form" action="#">
+                            <div class="booking__inputs">
+                                <input class="booking__input" type="text" id="bookName1" name="nameNumOne" placeholder="Имя" required>                                
+                            </div>
+                            <div class="booking__inputs">
+                                <input class="booking__input" type="text" id="bookPhone1" name="phoneNumOne" data-name='validate-phone'
+                                    placeholder="Телефон" required>
+                            </div>
+                            <textarea class="booking__input booking__input_textarea" name="comments" id="comments2"
+                                placeholder="Примечание"></textarea>
+                            <div class="card-book__btn">
+                                <button class="booking__button button" type="submit">Забронировать</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="numbers__slider slider">
+                <div class="slider__inner swiper">
+                    <ul class="slider__content swiper-wrapper">
+                        <li class="slider__item swiper-slide">
+                            <img class="slider__img" src="../../images/slider/img2.jpg" alt="комната для вашего любимца"
+                                width="380" height="500">
+                        </li>
+                        <li class="slider__item swiper-slide">
+                            <img class="slider__img" src="../../images/slider/img2.jpg" alt="комната для вашего любимца"
+                                width="380" height="500">
+                        </li>
+                        <li class="slider__item swiper-slide">
+                            <img class="slider__img" src="../../images/slider/img2.jpg" alt="комната для вашего любимца"
+                                width="380" height="500">
+                        </li>
+                    </ul>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <div class="slider__text numbers-info">
+                    <div class="numbers-info__content">
+                        <h3 class="numbers-info__title">
+                            Номер <span>"стандарт"</span>
+                        </h3>
+                        <span class="numbers-info__price">
+                            700 руб./сутки
+                        </span>
+                    </div>
+                    <div class="numbers-info__content">
+                        <span class="numbers-info__house">
+                            Размер номера
+                        </span>
+                        <span class="numbers-info__footage">
+                            1500*1500*2100 см
+                        </span>
+                    </div>
+                    <div class="numbers-info__content">
+                        <span class="numbers-info__house">
+                            Размер домиков
+                        </span>
+                        <span class="numbers-info__footage">32*32см</span>
+                        <span class="numbers-info__footage">38*32см</span>
+                    </div>
+                    <button class="numbers-info__button button" type="button">
+                        Забронировать
+                    </button>
+
+                    <div class="booking__submit card-book hidden">
+                        <button class="card-book__close">
+                            <svg class="card-book__icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                            </svg>
+                        </button>
+                        <form class="booking__form" action="#">
+                            <div class="booking__inputs">
+                                <input class="booking__input" type="text" id="bookName2" name="nameNumTwo" placeholder="Имя"
+                                    required>
+                            </div>
+                            <div class="booking__inputs">
+                                <input class="booking__input" type="text" id="bookPhone2" name="phoneNumTwo" data-name='validate-phone'
+                                    placeholder="Телефон" required>
+                            </div>
+                            <textarea class="booking__input booking__input_textarea" name="comments" id="comments2"
+                                placeholder="Примечание"></textarea>
+                            <div class="card-book__btn">
+                                <button class="booking__button button" type="submit">Забронировать</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="numbers__slider slider">
+                <div class="slider__inner swiper">
+                    <ul class="slider__content swiper-wrapper">
+                        <li class="slider__item swiper-slide">
+                            <img class="slider__img" src="../../images/slider/img3.jpg" alt="комната для вашего любимца"
+                                width="380" height="500">
+                        </li>
+                        <li class="slider__item swiper-slide">
+                            <img class="slider__img" src="../../images/slider/img3.jpg" alt="комната для вашего любимца"
+                                width="380" height="500">
+                        </li>
+                        <li class="slider__item swiper-slide">
+                            <img class="slider__img" src="../../images/slider/img3.jpg" alt="комната для вашего любимца"
+                                width="380" height="500">
+                        </li>
+                    </ul>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <div class="slider__text numbers-info">
+                    <div class="numbers-info__content">
+                        <h3 class="numbers-info__title">
+                            Номер <span>"стандарт"</span>
+                        </h3>
+                        <span class="numbers-info__price">
+                            700 руб./сутки
+                        </span>
+                    </div>
+                    <div class="numbers-info__content">
+                        <span class="numbers-info__house">
+                            Размер номера
+                        </span>
+                        <span class="numbers-info__footage">
+                            1500*1500*2100 см
+                        </span>
+                    </div>
+                    <div class="numbers-info__content">
+                        <span class="numbers-info__house">
+                            Размер домиков
+                        </span>
+                        <span class="numbers-info__footage">32*32см</span>
+                        <span class="numbers-info__footage">38*32см</span>
+                    </div>
+                    <button class="numbers-info__button button" type="button">
+                        Забронировать
+                    </button>
+
+                    <div class="booking__submit card-book hidden">
+                        <button class="card-book__close">
+                            <svg class="card-book__icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                            </svg>
+                        </button>
+                        <form class="booking__form" action="#">
+                            <div class="booking__inputs">
+                                <input class="booking__input" type="text" id="bookName3" name="nameNumThree" placeholder="Имя"
+                                    required>
+                            </div>
+                            <div class="booking__inputs">
+                                <input class="booking__input" type="text" id="bookPhone3" name="phoneNumThree" data-name='validate-phone'
+                                    placeholder="Телефон" required>
+                            </div>
+                            <textarea class="booking__input booking__input_textarea" name="comments" id="comments3"
+                                placeholder="Примечание"></textarea>
+                            <div class="card-book__btn">
+                                <button class="booking__button button" type="submit">Забронировать</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section class="gallery">
+    <div class="container">
+        <h2 class="gallery__title title _anim-items">
+            Фотогалерея
+        </h2>
+        
+            <div class="gallery__slider swiper">
+                <ul class="gallery__slider-content swiper-wrapper">
+                    <li class="gallery__slider-item swiper-slide">
+                        <img class="gallery__slider-img" src="../../images/slider/img4.jpg" alt="комната для вашего любимца" width="480" height="532">
+                    </li>
+                    <li class="gallery__slider-item swiper-slide">
+                        <img class="gallery__slider-img" src="../../images/slider/img5.jpg" alt="комната для вашего любимца" width="480" height="532">
+                    </li>
+                    <li class="gallery__slider-item swiper-slide">
+                        <img class="gallery__slider-img" src="../../images/slider/img6.jpg" alt="комната для вашего любимца" width="480" height="532">
+                    </li>
+                    <li class="gallery__slider-item swiper-slide">
+                        <img class="gallery__slider-img" src="../../images/slider/img4.jpg" alt="комната для вашего любимца" width="480" height="532">
+                    </li>
+                    <li class="gallery__slider-item swiper-slide">
+                        <img class="gallery__slider-img" src="../../images/slider/img5.jpg" alt="комната для вашего любимца" width="480" height="532">
+                    </li>
+                    <li class="gallery__slider-item swiper-slide">
+                        <img class="gallery__slider-img" src="../../images/slider/img6.jpg" alt="комната для вашего любимца" width="480" height="532">
+                    </li>
+                    <li class="gallery__slider-item swiper-slide">
+                        <img class="gallery__slider-img" src="../../images/slider/img4.jpg" alt="комната для вашего любимца" width="480" height="532">
+                    </li>
+                    <li class="gallery__slider-item swiper-slide">
+                        <img class="gallery__slider-img" src="../../images/slider/img5.jpg" alt="комната для вашего любимца" width="480" height="532">
+                    </li>
+                    <li class="gallery__slider-item swiper-slide">
+                        <img class="gallery__slider-img" src="../../images/slider/img6.jpg" alt="комната для вашего любимца" width="480" height="532">
+                    </li>
+                    <li class="gallery__slider-item swiper-slide">
+                        <img class="gallery__slider-img" src="../../images/slider/img4.jpg" alt="комната для вашего любимца" width="480" height="532">
+                    </li>
+                    <li class="gallery__slider-item swiper-slide">
+                        <img class="gallery__slider-img" src="../../images/slider/img5.jpg" alt="комната для вашего любимца" width="480" height="532">
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            
+        
+    </div>
+</section>
+<section class="conditions">
+    <div class="container">
+        <h1 class="conditions__title title _anim-items">
+            Условия размещения
+        </h1>
+
+        <div class="conditions__content">
+            <div class="conditions__heading">
+                <h2 class="conditions__subtitle">
+                    В стоимость проживания включено
+                </h2>
+            </div>
+            <div class="conditions__list">
+                <ul class="conditions__row">
+                    <li class="conditions__item">
+                        наполнитель на выбор
+                    </li>
+                    <li class="conditions__item">
+                        ежедневные игры и внимание
+                    </li>
+                    <li class="conditions__item">
+                        ежедневный фото/видеоотчет
+                    </li>
+                    <li class="conditions__item">
+                        лоток
+                    </li>
+                    <li class="conditions__item">
+                        мисочки для корма и воды
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="conditions__content">
+            <div class="conditions__heading">
+                <h2 class="conditions__subtitle">
+                    Рекомендации
+                </h2>
+                <p class="conditions__text">
+                    Чтобы ускорить период адаптации котика к новым условиям возьмите с собой
+                </p>
+            </div>
+            <div class="conditions__list">
+                <ul class="conditions__row">
+                    <li class="conditions__item">
+                        лежанку
+                    </li>
+                    <li class="conditions__item">
+                        любимую игрушку
+                    </li>
+                    <li class="conditions__item">
+                        вещь с Вашим запахом
+                    </li>
+                    <li class="conditions__item">
+                        немного наполнителя с его запахом
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="conditions__content">
+            <div class="conditions__heading">
+                <h2 class="conditions__subtitle">
+                    Питание
+                </h2>
+            </div>
+            <div class="conditions__list conditions__list_text">
+                <p>Корм необходимо принести с собой из расчета периода нахождения котика в нашей гостинице, согласно
+                    индивидуальному плану кормления.
+                </p>
+                <p> В случае, если корм закончится, по согласованию с Вами, мы купим корм. При выселении необходимо
+                    будет доплатить, согласно чеку за покупку.
+                </p>
+            </div>
+        </div>
+
+        <div class="conditions__content conditions__content_reverse">
+            <div class="conditions__heading">
+                <h2 class="conditions__subtitle conditions__subtitle_accend">
+                    Важно!
+                </h2>
+                <div class="conditions__list">
+                    <ul class="conditions__row">
+                        <li class="conditions__item">
+                            Мы ежедневно наблюдаем за поведением и самочувствием Вашего котика!
+                        </li>
+                        <li class="conditions__item">
+                            В случае любого отклонения от нормы, мы свяжемся с Вами!
+                        </li>
+                        <li class="conditions__item">
+                            При необходимости и с Вашего согласия обратимся в ветеринарную клинику.
+                        </li>
+                        <li class="conditions__item">
+                            При выселении необходимо будет доплатить за понесенные расходы, согласно чеку на оказание
+                            услуг.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="conditions__image">
+                <img class="conditions__img" src="../../images/decor/cat-condition.png" alt="котик" width="510"
+                    height="360">
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="booking" id="booking">
+    <div class="container">
+        <h2 class="booking__title title _anim-items">
+            Заявка на бронирование
+        </h2>
+        <div class="booking__content">
+            <div class="booking__image">
+                <img class="booking__img" src="../../images/decor/cat-booking.png" alt="котик" width="276" height="215">
+            </div>
+
+            <div class="booking__submit">
+                <form class="booking__form" action="#">
+                    <div class="booking__inputs">
+                        <input class="booking__input" type="text" id="bookName" name="nameBook" placeholder="Имя" required minlength="3" maxlength="12">
+                        <input class="booking__input" type="text" id="bookDateFrom" name="datefrom"
+                            placeholder="Дата заезда" required>
+                    </div>
+                    <div class="booking__inputs">
+                        <input class="booking__input" type="text" id="bookPhone" name="phoneBook" data-name='validate-phone' placeholder="Телефон"
+                            required>
+                        <input class="booking__input" type="text" id="bookDateTo" name="dateto"
+                            placeholder="Дата выезда" required>
+                    </div>
+                    <div class="booking__inputs">
+                        <input class="booking__input" type="text" id="nickname" name="nickname"
+                            placeholder="Кличка животного">
+                        <input class="booking__input" type="text" id="typeNumber" name="typenum"
+                            placeholder="Тип номера">
+                    </div>
+                    <textarea class="booking__input booking__input_textarea" name="comments" id="comments"
+                        placeholder="Примечание"></textarea>
+                    <button class="booking__button button" type="submit">Забронировать</button>
+                </form>
+            </div>
+            
+        </div>
+        
+
+    </div>
+</section>
+<section class="video" id="videoBlock">
+    <div class="container">
+        <div class="video__top">
+            <h2 class="video__title title _anim-items">
+                Видеонаблюдение
+            </h2>
+            <div class="video__text">
+                <p>Чтобы увидеть вашего кота или кошку нужно войти под логином и паролем, которые вам выдали при
+                    заселении</p>
+            </div>
+        </div>
+        <div class="video__numbers rooms">
+            <div class="rooms__text">
+                <p>Выберите номер комнаты вашего котика и посмотрите, чем он сейчас занят</p>
+            </div>
+            <ul class="rooms__list">
+                <li class="rooms__item">
+
+                    <a class="rooms__link" data-module="action-modal-video" href="#">
+                        <svg class="rooms__icon">
+                            <use xlink:href="images/sprite.svg#pow"></use>
+                        </svg>
+                    </a>
+                    <div class="rooms__video" data-module="modal-video" data-module-action="close-modal-video">
+                        <div class="rooms__video-modal">                           
+                            <button class="rooms__video-btn" data-module-action="close-modal-video">
+                                <svg class="rooms__video-icon">
+                                    <use xlink:href="images/sprite.svg#plus"></use>
+                                </svg>
+                            </button>
+                            <video class="rooms__video-window" src="https://www.youtube.com/watch?v=OGb2Hkeu2BI" width="500" height="400" controls="controls" poster="../../images/slider/img1.jpg"></video>                                                      
+                        </div>
+                    </div>
+
+                </li>
+
+                <li class="rooms__item">
+                    
+                    <a class="rooms__link" data-module="action-modal-video" href="#">
+                        <svg class="rooms__icon">
+                            <use xlink:href="images/sprite.svg#pow"></use>
+                        </svg>
+                    </a>
+                    <div class="rooms__video" data-module="modal-video" data-module-action="close-modal-video">
+                        <div class="rooms__video-modal">                           
+                            <button class="rooms__video-btn" data-module-action="close-modal-video">
+                                <svg class="rooms__video-icon">
+                                    <use xlink:href="images/sprite.svg#plus"></use>
+                                </svg>
+                            </button>
+                            <video class="rooms__video-window" src="https://www.youtube.com/watch?v=OGb2Hkeu2BI" width="500" height="400" controls="controls" poster="../../images/slider/img2.jpg"></video>                                                      
+                        </div>
+                    </div>
+
+                </li>
+                <li class="rooms__item">
+
+                     <a class="rooms__link" data-module="action-modal-video" href="#">
+                        <svg class="rooms__icon">
+                            <use xlink:href="images/sprite.svg#pow"></use>
+                        </svg>
+                    </a>
+                    <div class="rooms__video" data-module="modal-video" data-module-action="close-modal-video">
+                        <div class="rooms__video-modal">                           
+                            <button class="rooms__video-btn" data-module-action="close-modal-video">
+                                <svg class="rooms__video-icon">
+                                    <use xlink:href="images/sprite.svg#plus"></use>
+                                </svg>
+                            </button>
+                            <video class="rooms__video-window" src="https://www.youtube.com/watch?v=OGb2Hkeu2BI" width="500" height="400" controls="controls" poster="../../images/slider/img2.jpg"></video>                                                      
+                        </div>
+                    </div>
+
+                </li>
+                <li class="rooms__item">
+                     <a class="rooms__link" data-module="action-modal-video" href="#">
+                        <svg class="rooms__icon">
+                            <use xlink:href="images/sprite.svg#pow"></use>
+                        </svg>
+                    </a>
+                    <div class="rooms__video" data-module="modal-video" data-module-action="close-modal-video">
+                        <div class="rooms__video-modal">                           
+                            <button class="rooms__video-btn" data-module-action="close-modal-video">
+                                <svg class="rooms__video-icon">
+                                    <use xlink:href="images/sprite.svg#plus"></use>
+                                </svg>
+                            </button>
+                            <video class="rooms__video-window" src="https://www.youtube.com/watch?v=OGb2Hkeu2BI" width="500" height="400" controls="controls" poster="../../images/slider/img2.jpg"></video>                                                      
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <ul class="rooms__list rooms__list_bottom">
+            <li class="rooms__item">
+                <a class="rooms__link" data-module="action-modal-video" href="#">
+                    <svg class="rooms__icon">
+                        <use xlink:href="images/sprite.svg#pow"></use>
+                    </svg>
+                </a>
+                <div class="rooms__video" data-module="modal-video" data-module-action="close-modal-video">
+                    <div class="rooms__video-modal">                           
+                        <button class="rooms__video-btn" data-module-action="close-modal-video">
+                            <svg class="rooms__video-icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                            </svg>
+                        </button>
+                        <video class="rooms__video-window" src="https://www.youtube.com/watch?v=OGb2Hkeu2BI" width="500" height="400" controls="controls" poster="../../images/slider/img2.jpg"></video>                                                      
+                    </div>
+                </div>
+            </li>
+            <li class="rooms__item">
+                <a class="rooms__link" data-module="action-modal-video" href="#">
+                    <svg class="rooms__icon">
+                        <use xlink:href="images/sprite.svg#pow"></use>
+                    </svg>
+                </a>
+                <div class="rooms__video" data-module="modal-video" data-module-action="close-modal-video">
+                    <div class="rooms__video-modal">                           
+                        <button class="rooms__video-btn" data-module-action="close-modal-video">
+                            <svg class="rooms__video-icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                            </svg>
+                        </button>
+                        <video class="rooms__video-window" src="https://www.youtube.com/watch?v=OGb2Hkeu2BI" width="500" height="400" controls="controls" poster="../../images/slider/img2.jpg"></video>                                                      
+                    </div>
+                </div>
+            </li>
+            <li class="rooms__item">
+                <a class="rooms__link" data-module="action-modal-video" href="#">
+                    <svg class="rooms__icon">
+                        <use xlink:href="images/sprite.svg#pow"></use>
+                    </svg>
+                </a>
+                <div class="rooms__video" data-module="modal-video" data-module-action="close-modal-video">
+                    <div class="rooms__video-modal">                           
+                        <button class="rooms__video-btn" data-module-action="close-modal-video">
+                            <svg class="rooms__video-icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                            </svg>
+                        </button>
+                        <video class="rooms__video-window" src="https://www.youtube.com/watch?v=OGb2Hkeu2BI" width="500" height="400" controls="controls" poster="../../images/slider/img2.jpg"></video>                                                      
+                    </div>
+                </div>
+            </li>
+            <li class="rooms__item">
+                <a class="rooms__link" data-module="action-modal-video" href="#">
+                    <svg class="rooms__icon">
+                        <use xlink:href="images/sprite.svg#pow"></use>
+                    </svg>
+                </a>
+                <div class="rooms__video" data-module="modal-video" data-module-action="close-modal-video">
+                    <div class="rooms__video-modal">                           
+                        <button class="rooms__video-btn" data-module-action="close-modal-video">
+                            <svg class="rooms__video-icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                            </svg>
+                        </button>
+                        <video class="rooms__video-window" src="https://www.youtube.com/watch?v=OGb2Hkeu2BI" width="500" height="400" controls="controls" poster="../../images/slider/img2.jpg"></video>                                                      
+                    </div>
+                </div>
+            </li>
+            <li class="rooms__item">
+                <a class="rooms__link" data-module="action-modal-video" href="#">
+                    <svg class="rooms__icon">
+                        <use xlink:href="images/sprite.svg#pow"></use>
+                    </svg>
+                </a>
+                <div class="rooms__video" data-module="modal-video" data-module-action="close-modal-video">
+                    <div class="rooms__video-modal">                           
+                        <button class="rooms__video-btn" data-module-action="close-modal-video">
+                            <svg class="rooms__video-icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                            </svg>
+                        </button>
+                        <video class="rooms__video-window" src="https://www.youtube.com/watch?v=OGb2Hkeu2BI" width="500" height="400" controls="controls" poster="../../images/slider/img2.jpg"></video>                                                      
+                    </div>
+                </div>
+            </li>
+            <li class="rooms__item">
+                <a class="rooms__link" data-module="action-modal-video" href="#">
+                    <svg class="rooms__icon">
+                        <use xlink:href="images/sprite.svg#pow"></use>
+                    </svg>
+                </a>
+                <div class="rooms__video" data-module="modal-video" data-module-action="close-modal-video">
+                    <div class="rooms__video-modal">                           
+                        <button class="rooms__video-btn" data-module-action="close-modal-video">
+                            <svg class="rooms__video-icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                            </svg>
+                        </button>
+                        <video class="rooms__video-window" src="https://www.youtube.com/watch?v=OGb2Hkeu2BI" width="500" height="400" controls="controls" poster="../../images/slider/img2.jpg"></video>                                                      
+                    </div>
+                </div>
+            </li>
+            <li class="rooms__item">
+                <a class="rooms__link" data-module="action-modal-video" href="#">
+                    <svg class="rooms__icon">
+                        <use xlink:href="images/sprite.svg#pow"></use>
+                    </svg>
+                </a>
+                <div class="rooms__video" data-module="modal-video" data-module-action="close-modal-video">
+                    <div class="rooms__video-modal">                           
+                        <button class="rooms__video-btn" data-module-action="close-modal-video">
+                            <svg class="rooms__video-icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                            </svg>
+                        </button>
+                        <video class="rooms__video-window" src="https://www.youtube.com/watch?v=OGb2Hkeu2BI" width="500" height="400" controls="controls" poster="../../images/slider/img2.jpg"></video>                                                      
+                    </div>
+                </div>
+            </li>
+            <li class="rooms__item">
+                <a class="rooms__link" data-module="action-modal-video" href="#">
+                    <svg class="rooms__icon">
+                        <use xlink:href="images/sprite.svg#pow"></use>
+                    </svg>
+                </a>
+                <div class="rooms__video" data-module="modal-video" data-module-action="close-modal-video">
+                    <div class="rooms__video-modal">                           
+                        <button class="rooms__video-btn" data-module-action="close-modal-video">
+                            <svg class="rooms__video-icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                            </svg>
+                        </button>
+                        <video class="rooms__video-window" src="https://www.youtube.com/watch?v=OGb2Hkeu2BI" width="500" height="400" controls="controls" poster="../../images/slider/img2.jpg"></video>                                                      
+                    </div>
+                </div>
+            </li>
+            <li class="rooms__item">
+                <a class="rooms__link" data-module="action-modal-video" href="#">
+                    <svg class="rooms__icon">
+                        <use xlink:href="images/sprite.svg#pow"></use>
+                    </svg>
+                </a>
+                <div class="rooms__video" data-module="modal-video" data-module-action="close-modal-video">
+                    <div class="rooms__video-modal">                           
+                        <button class="rooms__video-btn" data-module-action="close-modal-video">
+                            <svg class="rooms__video-icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                            </svg>
+                        </button>
+                        <video class="rooms__video-window" src="https://www.youtube.com/watch?v=OGb2Hkeu2BI" width="500" height="400" controls="controls" poster="../../images/slider/img2.jpg"></video>                                                      
+                    </div>
+                </div>
+            </li>
+            <li class="rooms__item">
+                <a class="rooms__link" data-module="action-modal-video" href="#">
+                    <svg class="rooms__icon">
+                        <use xlink:href="images/sprite.svg#pow"></use>
+                    </svg>
+                </a>
+                <div class="rooms__video" data-module="modal-video" data-module-action="close-modal-video">
+                    <div class="rooms__video-modal">                           
+                        <button class="rooms__video-btn" data-module-action="close-modal-video">
+                            <svg class="rooms__video-icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                            </svg>
+                        </button>
+                        <video class="rooms__video-window" src="https://www.youtube.com/watch?v=OGb2Hkeu2BI" width="500" height="400" controls="controls" poster="../../images/slider/img2.jpg"></video>                                                      
+                    </div>
+                </div>
+            </li>
+            <li class="rooms__item">
+                <a class="rooms__link" data-module="action-modal-video" href="#">
+                    <svg class="rooms__icon">
+                        <use xlink:href="images/sprite.svg#pow"></use>
+                    </svg>
+                </a>
+                <div class="rooms__video" data-module="modal-video" data-module-action="close-modal-video">
+                    <div class="rooms__video-modal">                           
+                        <button class="rooms__video-btn" data-module-action="close-modal-video">
+                            <svg class="rooms__video-icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                            </svg>
+                        </button>
+                        <video class="rooms__video-window" src="https://www.youtube.com/watch?v=OGb2Hkeu2BI" width="500" height="400" controls="controls" poster="../../images/slider/img2.jpg"></video>                                                      
+                    </div>
+                </div>
+            </li>
+            <li class="rooms__item">
+                <a class="rooms__link" data-module="action-modal-video" href="#">
+                    <svg class="rooms__icon">
+                        <use xlink:href="images/sprite.svg#pow"></use>
+                    </svg>
+                </a>
+                <div class="rooms__video" data-module="modal-video" data-module-action="close-modal-video">
+                    <div class="rooms__video-modal">                           
+                        <button class="rooms__video-btn" data-module-action="close-modal-video">
+                            <svg class="rooms__video-icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                            </svg>
+                        </button>
+                        <video class="rooms__video-window" src="https://www.youtube.com/watch?v=OGb2Hkeu2BI" width="500" height="400" controls="controls" poster="../../images/slider/img2.jpg"></video>                                                      
+                    </div>
+                </div>
+            </li>
+            <li class="rooms__item">
+                <a class="rooms__link" data-module="action-modal-video" href="#">
+                    <svg class="rooms__icon">
+                        <use xlink:href="images/sprite.svg#pow"></use>
+                    </svg>
+                </a>
+                <div class="rooms__video" data-module="modal-video" data-module-action="close-modal-video">
+                    <div class="rooms__video-modal">                           
+                        <button class="rooms__video-btn" data-module-action="close-modal-video">
+                            <svg class="rooms__video-icon">
+                                <use xlink:href="images/sprite.svg#plus"></use>
+                            </svg>
+                        </button>
+                        <video class="rooms__video-window" src="https://www.youtube.com/watch?v=OGb2Hkeu2BI" width="500" height="400" controls="controls" poster="../../images/slider/img2.jpg"></video>                                                      
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section> 
+<section class="about" id="about">
+    <div class="container">
+        <div class="about__top">
+            <h2 class="about__title title _anim-items">
+                Всё о нас
+            </h2>
+            <div class="about__text">
+                <p>
+                    Ценность нашей гостиницы в том, что вы можете полностью доверить нам заботу и уход за вашим котиком!
+                </p>
+            </div>
+        </div>
+        <div class="about__bottom">
+            <div class="about__text about__text_subtitle">
+                <p>
+                    Где и с кем оставить своего котика на время отпуска?
+                </p>
+                <img class="about__image" src="../../images/decor/cat-about.png" alt="котик" width="158" height="158">
+            </div>
+            <ul class="about__content">
+                <li class="about__item">
+                    <p>Многие из нас, планируя отпуск, или при необходимости уехать в командировку, или в период приезда
+                        гостей с аллергией и по другим причинам, сталкиваются с данным вопросом.
+                    </p>
+                </li>
+                <li class="about__item">
+                    <p>В маленьких городах этот вопрос решается благодаря помощи родственников и соседей, которые
+                        возьмут котика к себе или станут регулярно его навещать, чтобы покормить и уделить внимание.</p>
+                </li>
+                <li class="about__item">
+                    <p> В большом городе данная задача решается сложнее, т.к. из-за неблизких расстояний возникают
+                        неудобства ежедневно навещать Вашего котика. Данная ситуация негативно сказывается на режиме
+                        кормления и длительное отсутствие внимания является стрессом для животного.</p>
+                </li>
+            </ul>
+        </div>
+        <h3 class="about__subtitle">
+            Мы предлагаем
+        </h3>
+        <div class="about__list advantage">
+            <ul class="advantage__row">
+                <li class="advantage__item">
+                    гостиница оснащена приточно-вытяжной вентиляцией, с регулировкой температуры в летний и зимний
+                    период
+                </li>
+                <li class="advantage__item">
+                    соблюдение санитарно-гигиенических норм
+                </li>
+                <li class="advantage__item">
+                    круглосуточное присутствие котоняни
+                </li>
+                <li class="advantage__item">
+                    кормление и уход (индивидуальный подход к каждому котику)
+                </li>
+                <li class="advantage__item">
+                    индивидуальные номера
+                    <span class="advantage__item-list">
+                        10 номеров более 2 кв. м с окном
+                    </span>
+                    <span class="advantage__item-list">
+                        6 номеров более 2 кв. м без окна
+                    </span>
+                    <span class="advantage__item-list">
+                        1 номер более 3 кв.м с окнами
+                    </span>
+                </li>
+            </ul>
+            <ul class="advantage__row">
+                <li class="advantage__item">
+                    подготовка номера к заселению нового постояльца (обработка поверхностей дезинфицирующими средствами,
+                    кварцевание)
+                </li>
+                <li class="advantage__item">
+                    видеонаблюдение в режиме 24/7
+                </li>
+                <li class="advantage__item">
+                    наличие холодильника для хранения влажного корма
+                </li>
+                <li class="advantage__item">
+                    ежедневный фото/видеоотчет на мессенджеры
+                </li>
+            </ul>
+        </div>
+
+        <div class="about__note note">
+            <div class="note__image">
+                <img class="note__img" src="../../images/decor/cat-note.png" alt="котик" width="510" height="360">
+            </div>
+            <div class="note__content">
+                <h4 class="note__subtitle conditions__subtitle_accend">
+                    Важно!
+                </h4>
+                <div class="note__text">
+                    <p>При необходимости медицинского наблюдения за больным котиком или после операции, для его
+                        безопасности, рекомендуем выбирать гостиницу при ветеринарной клинике, т.к. гостиница для кошек
+                        не является медицинским учреждением, а предоставляет услуги по временному содержанию животных.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+<div class="concerns">
+    <div class="container">
+        <h2 class="concerns__title title _anim-items">
+            Страхи котовладельца
+        </h2>
+
+        <span class="concerns__note">Нажмите, чтобы посмотреть</span>
+
+        <div class="concerns__content">
+            <button class="concerns__button open">
+                <span class="concerns__icon"></span>
+            </button>
+            <h3 class="concerns__subtitle" data-name="concerns__subtitle">
+                Вдруг моя кошка почувствует себя плохо, а я на другом конце света и не могу ничего предпринять?
+            </h3>
+            <div class="concerns__text hidden">
+                <p>
+                    При малейшем отклонении от нормы поведения или состояния кошки, мы незамедлительно сообщим Вам. С
+                    Вашего согласия мы обратимся в ветеринарную клинику и сообщим о результатах осмотра и принятых
+                    ветеринаром решений (при необходимости Вы сможете лично переговорить с врачом).
+                </p>
+                <p> Если кошечке понадобится лечение, мы осуществим все необходимые действия. При выезде мы предоставим
+                    все документы и чеки на оплату услуг ветклиники.
+                </p>
+            </div>
+        </div>
+
+        <div class="concerns__content">
+            <button class="concerns__button open">
+                <span class="concerns__icon"></span>
+            </button>
+            <h3 class="concerns__subtitle" data-name="concerns__subtitle">
+                Мою кошку посадят в номер и забудут о ней!
+            </h3>
+            <div class="concerns__text hidden">
+                <p>
+                    При малейшем отклонении от нормы поведения или состояния кошки, мы незамедлительно сообщим Вам. С
+                    Вашего согласия мы обратимся в ветеринарную клинику и сообщим о результатах осмотра и принятых
+                    ветеринаром решений (при необходимости Вы сможете лично переговорить с врачом).
+                </p>
+                <p> Если кошечке понадобится лечение, мы осуществим все необходимые действия. При выезде мы предоставим
+                    все документы и чеки на оплату услуг ветклиники.
+                </p>
+            </div>
+        </div>
+
+        <div class="concerns__content">
+            <button class="concerns__button open">
+                <span class="concerns__icon"></span>
+            </button>
+            <h3 class="concerns__subtitle" data-name="concerns__subtitle">
+                Мой котик боится замкнутых пространств!
+            </h3>
+            <div class="concerns__text hidden">
+                <p>
+                    При малейшем отклонении от нормы поведения или состояния кошки, мы незамедлительно сообщим Вам. С
+                    Вашего согласия мы обратимся в ветеринарную клинику и сообщим о результатах осмотра и принятых
+                    ветеринаром решений (при необходимости Вы сможете лично переговорить с врачом).
+                </p>
+                <p> Если кошечке понадобится лечение, мы осуществим все необходимые действия. При выезде мы предоставим
+                    все документы и чеки на оплату услуг ветклиники.
+                </p>
+            </div>
+        </div>
+
+        <div class="concerns__content">
+            <button class="concerns__button open">
+                <span class="concerns__icon"></span>
+            </button>
+            <h3 class="concerns__subtitle" data-name="concerns__subtitle">
+                Боюсь реакции на присутствие незнакомых котику людей!
+            </h3>
+            <div class="concerns__text hidden">
+                <p>
+                    При малейшем отклонении от нормы поведения или состояния кошки, мы незамедлительно сообщим Вам. С
+                    Вашего согласия мы обратимся в ветеринарную клинику и сообщим о результатах осмотра и принятых
+                    ветеринаром решений (при необходимости Вы сможете лично переговорить с врачом).
+                </p>
+                <p> Если кошечке понадобится лечение, мы осуществим все необходимые действия. При выезде мы предоставим
+                    все документы и чеки на оплату услуг ветклиники.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="cooperation">
+    <div class="container">
+        <h2 class="cooperation__title title _anim-items">
+            Сотрудничество
+        </h2>
+
+        <div class="cooperation__content">
+            <div class="cooperation__box">
+                <h3 class="cooperation__subtitle">
+                    Приглашаем к сотрудничеству
+                </h3>
+                <div class="cooperation__text">
+                    <p>
+                        Сотрудничество на основе коллаборации: совместные конкурсы, скидочные купоны, кэшбек и тп.
+                    </p>
+                </div>
+            </div>
+            <div class="cooperation__connect">
+                <ul class="cooperation__list">
+                    <li class="cooperation__item">
+                        Ветеринарные клиники
+                    </li>
+                    <li class="cooperation__item">
+                        Зоомагазины
+                    </li>
+                    <li class="cooperation__item">
+                        Грумеров
+                    </li>
+                    <li class="cooperation__item">
+                        Туристические фирмы
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+<section class="contacts">
+    <div class="container">
+
+        <h2 class="contacts__title title _anim-items">
+            Адрес и контакты
+        </h2>
+        <address class="contacts__address">
+            <span class="contacts__address-item" id="address">
+                г. Днипро, ул. Ключевая, д.32
+            </span>
+            <button class="contacts__button" type="button" data-clipboard-target="#address">
+                Скопировать адрес для навигатора
+            </button>
+        </address>
+        <div class="contacts__map">
+            <iframe class="contacts__iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d786.5264661776429!2d34.90214787596229!3d48.46517950062669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe14de8754391%3A0x6a41377c9a34e5f4!2z0JrQu9GO0YfQvtCy0LAg0LLRg9C70LjRhtGPLCAzMiwg0JTQvdGW0L_RgNC-LCDQlNC90ZbQv9GA0L7Qv9C10YLRgNC-0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNDkwMDA!5e0!3m2!1sru!2sua!4v1642166603414!5m2!1sru!2sua"
+                width="1200" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="contacts__coordinate">
+            <div class="contacts__info">
+                <h3 class="contacts__subtitle">
+                    Как пройти
+                </h3>
+                <img class="contacts__bg" src="../../images/decor/contact-pow.png" alt="лапка">
+            </div>
+            <div class="contacts__images">
+                <img class="contacts__img" src="../../images/decor/img-address1.jpg" alt="фото как пройти" width="200"
+                    height="210">
+                <span class="contacts__text">
+                    Мы находимся в здании многоуровневой парковки со стороны двора
+                </span>
+            </div>
+            <div class="contacts__images">
+                <img class="contacts__img" src="../../images/decor/img-address2.jpg" alt="фото как пройти" width="200"
+                    height="210">
+                <span class="contacts__text">
+                    Вход со двора под вывеской "Вход" 5 этаж
+                </span>
+            </div>
+            <div class="contacts__images">
+                <img class="contacts__img" src="../../images/decor/img-address3.jpg" alt="фото как пройти" width="200"
+                    height="210">
+                <span class="contacts__text">
+                    Если навигатор привел Вас со стороны бизнес центра к шлагбауму, можно пройти по тропинке направо
+                </span>
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <span class="footer__copy">Copyright © 2021</span>
+            <nav class="footer__menu">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#numbers">
+                            Номера и цены
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#booking">
+                            Заявка на бронирование
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#payment">
+                            Оплатить
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#videoBlock">
+                            Видеонаблюдение
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#about">
+                            Всё о нас
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/main.min.js"></script>
+</body>
+</html>

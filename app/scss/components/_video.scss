@@ -1,0 +1,262 @@
+.video {
+    padding-top: 130px;
+
+    @include r(992) {
+        padding: 80px 0 0;
+    }
+
+    @include r(768) {
+        padding: 70px 0 0;
+    }
+
+    &__top {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @include r(992) {
+            display: block;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__title {
+        font-size: 40px;
+        margin-bottom: 137px;
+
+        @include r(992) {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        @include r(768) {
+            font-size: 20px;
+        }
+    }
+
+    &__text {
+        max-width: 449px;
+        padding-top: 15px;
+        font-size: 18px;
+        font-weight: 500;
+
+        @include r(768) {
+            font-size: 16px;
+        }
+    }
+
+    .rooms {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 105px;
+        gap: 174px;
+
+        @include r(992) {
+            display: block;
+        }
+
+        @include r(768) {
+            margin-bottom: 50px;
+        }
+
+        &__text {
+            width: 429px;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.5;
+
+            @include r(992) {
+                font-size: 18px;
+                margin-bottom: 30px;
+                max-width: 449px;
+            }
+
+            @include r(768) {
+                font-size: 16px;                
+            }
+            @include r(375) {
+                max-width: 300px;               
+            }
+        }
+
+        &__list {
+            counter-reset: listCounter;
+            padding-top: 47px;
+            display: grid;
+            grid-template-columns: repeat(4, 150px);
+
+            @include r(992) {
+                justify-content: center;
+                grid-template-columns: repeat(4, 169px);
+            }
+
+            @include r(768) {
+                grid-template-columns: repeat(4, 125px);
+                padding-top: 20px;
+            }
+
+            @include r(580) {
+                grid-template-columns: repeat(4, 90px);
+            }
+
+            @include r(360) {                
+                grid-template-columns: repeat(4, 75px);
+            }
+
+            &_bottom {
+                padding: 0 0 0 35px;
+                counter-reset: listCounter 4;
+                grid-template-columns: repeat(7, 169px);
+                grid-template-rows: repeat(2, 150px);
+
+                @include r(992) {
+                    justify-content: center;
+                    grid-template-columns: repeat(4, 169px);
+                    grid-template-rows: repeat(4, 150px);
+                }
+
+                @include r(768) {
+                    grid-template-columns: repeat(4, 125px);
+                    grid-template-rows: repeat(4, 125px);
+                    padding-left: 8px;
+                }
+
+                @include r(580) {
+                    grid-template-columns: repeat(4, 90px);
+                    grid-template-rows: repeat(4, 90px);
+                }
+
+                @include r(360) {                   
+                    grid-template-columns: repeat(4, 75px);
+                    grid-template-rows: repeat(4, 75px);
+                }
+            }
+        }
+
+        &__item {
+            counter-increment: listCounter;
+            position: relative;
+
+
+            &::before {
+                content: ""counter(listCounter)"";
+                color: #E36F96;
+                font-weight: 600;
+                font-size: 40px;
+                position: absolute;
+                top: -40px;
+                left: -25px;
+
+                @include r(768) {
+                    font-size: 30px;
+                    top: -22px;
+                    left: -20px;
+                }
+
+                @include r(580) {
+                    font-size: 20px;
+                    top: -10px;
+                    left: 2px;
+                }
+            }
+
+            &:not(:last-child) {
+                margin-right: 106px;
+            }
+        }
+
+        &__link {
+            cursor: pointer;
+
+            @include r(580) {
+                padding: 20px;
+            }
+        }
+
+        &__icon {
+            width: 70px;
+            height: 57px;
+            fill: $accend;
+
+            &:hover {
+                fill: #E36F96;
+                stroke: #E36F96;
+                transform: rotate(-25deg);
+            }
+
+            @include r(580) {
+                width: 40px;
+                height: 33px;
+            }
+        }
+
+        &__video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            background-color: rgba(246, 166, 191, 0.3);
+            ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s;
+
+            &-modal {
+                position: relative;
+            }
+
+            &-btn {
+                position: absolute;
+                cursor: pointer;
+                top: 10px;
+                right: 10px;
+                z-index: 11;
+            }
+
+            &-icon {
+                width: 30px;
+                height: 30px;
+                fill: $accend;
+                transform: rotate(-45deg);
+            }
+
+            &-window {
+                width: 100%;
+                max-width: 800px;
+                background-color: $black;
+                transform: scale(0);
+                box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+                transition: all 0.3s;
+            }
+
+            &.video__show {
+                pointer-events: all;
+                opacity: 1;
+
+                & .rooms__video-window {
+                    transform: scale(1);
+                }
+
+                & .rooms__video-number {
+                    transform: scale(1);
+                }
+            }
+
+            &-number {
+                position: absolute;
+                z-index: 12;
+                color: #E36F96;
+                transform: scale(0);
+                transition-duration: 0.5s;
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+
+    }
+
+}

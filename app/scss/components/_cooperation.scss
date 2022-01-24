@@ -1,0 +1,189 @@
+.cooperation {
+    padding: 170px 0 100px;
+
+    @include r(992) {
+        padding: 120px 0 100px;
+    }
+
+    @include r(768) {
+        padding: 55px 0 100px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 40px;
+        margin-bottom: 69px;
+
+        @include r(992) {
+            font-size: 30px;
+            margin-bottom: 50px;
+        }
+
+        @include r(768) {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        @include r(580) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @include r(768) {
+            display: block;
+        }
+    }
+
+    &__box {
+        @include r(768) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 30px;
+        @include r(768) {
+            font-size: 18px;
+        }
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.5;
+        max-width: 491px;
+
+        @include r(768) {
+            max-width: 740px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.5;
+
+        @include r(768) {
+            display: block;
+        }
+    }
+
+    &__item {
+        padding: 94px 27px 93px 28px;
+        border: 1px solid $accend;
+        border-radius: 50%;
+        width: 247px;
+        height: 247px;
+        text-align: center;
+        position: relative;
+        box-shadow:
+            inset rgba($accend, .6) 0 -3px 8px,
+            inset rgba($accend, .7) 0 3px 8px,
+            rgba($accend, .8) 0 3px 8px -3px;
+
+        &:nth-child(odd) {
+            margin-right: 18px;
+
+            @include r(992) {
+                margin-right: 10px;
+            }
+        }
+
+        &:nth-child(1) {
+            margin-bottom: 15px;
+
+            @include r(992) {
+                margin-bottom: 10px;
+            }
+        }
+
+        &:nth-child(2) {
+            margin-bottom: 15px;
+            padding-top: 105px;
+
+            @include r(1056) {
+                padding-top: 87px;
+            }
+
+            @include r(992) {
+                padding-top: 72px;
+                margin-bottom: 10px;
+            }
+
+            @include r(768) {
+                padding: 0 0 0 80px;
+            }
+        }
+
+        &:nth-child(3) {
+            padding-top: 105px;
+
+            @include r(1056) {
+                padding-top: 87px;
+            }
+
+            @include r(992) {
+                padding-top: 72px;
+            }
+
+            @include r(768) {
+                padding: 0 0 0 80px;
+            }
+        }
+
+        &::before {
+            @include pseudo;
+            width: 61px;
+            height: 50px;
+            top: -7px;
+            left: 0;
+            background-image: url('../../images/icons/pow.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: none;
+
+            @include r(768) {
+                display: block;
+            }
+        }
+
+        @include r(1056) {
+            width: 210px;
+            height: 210px;
+            padding-top: 77px;
+        }
+
+        @include r(992) {
+            width: 179px;
+            height: 179px;
+            padding: 67px 0;
+        }
+
+        @include r(768) {
+            padding: 0 0 0 80px;
+            border: none;
+            box-shadow: none;
+            height: 0;
+            max-width: 500px;
+            text-align: left;
+            width: 100%;
+        }
+
+        &:not(:last-child) {
+            @include r(768) {
+                margin-bottom: 80px;
+            }
+        }
+    }
+}

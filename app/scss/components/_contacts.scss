@@ -1,0 +1,151 @@
+.contacts {
+    background-color: #FAF7F5;
+    padding: 70px 0 78px;
+
+    @include r(768) {
+        padding: 30px 0;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 40px;
+        margin-bottom: 50px;
+
+        @include r(992) {
+            font-size: 30px;
+        }
+
+        @include r(768) {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        @include r(580) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__address {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 48px;
+
+        @include r(768) {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        &-item {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.5;
+
+            @include r(768) {
+                display: block;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__button {
+        font-size: 18px;
+        line-height: 1.4;
+        color: #848484;
+        cursor: pointer;
+
+        @include r(768) {
+            display: block;
+            font-size: 16px;
+        }
+    }
+
+    &__map {
+        margin-bottom: 70px;
+
+        @include r(992) {
+            margin-bottom: 50px;
+        }
+
+        @include r(768) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__iframe[src] {
+        max-width: 1200px;
+        height: 500px;
+        width: 100%;
+    }
+
+    &__coordinate {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+
+        @include r(768) {
+            grid-template-columns: repeat(4, 32%);
+        }
+
+        @include r(580) {
+            display: block;
+        }
+    }
+
+    &__info {
+        margin-bottom: 20px;
+    }
+
+    &__bg {
+        @include r(768) {
+            display: none;
+        }
+    }
+
+    &__images {
+        @include r(768) {
+            grid-row: 2;
+        }
+
+        @include r(580) {
+            display: flex;
+            column-gap: 20px;
+            padding: 10px;
+        }
+        @include r(375) {
+            display: block;
+            padding: 0;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__img {
+        width: 200px;
+        height: 210px;
+        margin-bottom: 20px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 1),
+            -23px 0 20px -23px rgba(0, 0, 0, .8),
+            23px 0 20px -23px rgba(0, 0, 0, .8),
+            0 0 40px rgba(0, 0, 0, .1) inset;
+            @include r(580) {
+                margin-bottom: 10px;
+            }
+            @include r(375) {
+                margin-bottom: 20px;
+            }
+    }
+
+    &__text {
+        display: block;
+        max-width: 236px;
+        line-height: 1.4;
+
+        @include r(580) {
+            font-size: 14px;
+            word-wrap: break-word;
+        }
+        @include r(375) {
+            font-size: 16px;
+        }
+    }
+}

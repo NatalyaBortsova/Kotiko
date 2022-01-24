@@ -1,0 +1,162 @@
+.conditions {
+    padding: 170px 0 140px;
+
+    @include r(992) {
+        padding: 100px 0;
+    }
+
+    &__title {
+        font-size: 40px;
+        margin-bottom: 70px;
+
+        @include r(992) {
+            font-size: 30px;
+            margin-bottom: 50px;
+        }
+
+        @include r(768) {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        @include r(580) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 20px;
+        color: #848484;
+        line-height: 1.5;
+        max-width: 530px;
+
+        @include r(768) {
+            font-size: 16px;
+        }
+
+        @include r(580) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-top: 1px solid $accend;
+        padding: 40px 0 30px;
+        gap: 90px;
+
+        @include r(992) {
+            padding: 20px 0 30px;
+        }
+
+        @include r(768) {
+            padding: 15px 0 30px;
+            gap: 35px;
+        }
+
+        @include r(580) {
+            display: block;
+
+            &:first-of-type {
+                border-top: 1px solid transparent;
+            }
+
+            &_reverse {
+                display: flex;
+                flex-direction: column-reverse;
+
+                .conditions__heading {
+                    padding-top: 125px;
+                }
+            }
+        }
+    }
+
+    &__subtitle {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 1.4;
+        max-width: 367px;
+        margin-bottom: 30px;
+
+        &_accend {
+            text-transform: uppercase;
+        }
+
+        @include r(992) {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        @include r(768) {
+            font-size: 18px;
+        }
+
+    }
+
+    &__list {
+        font-size: 18px;
+
+        @include r(768) {
+            font-size: 16px;
+        }
+
+        &_text {
+            p:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 20px;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        &::before {
+            @include pseudo;
+            width: 10px;
+            height: 10px;
+            background-color: $accend;
+            border-radius: 50%;
+            top: 5px;
+            left: 0;
+        }
+    }
+
+    &__image {
+        position: relative;
+    }
+
+    &__img {
+        width: 510px;
+        height: 360px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        @include r(1230) {
+            height: 347px;
+        }
+
+        @include r(992) {
+            width: 375px;
+            height: 255px;
+        }
+
+        @include r(768) {
+            width: 225px;
+            height: 160px;
+            top: 50px;
+        }
+        @include r(580) {           
+            top: 0px;
+            left: 50px;
+        }
+    }
+}

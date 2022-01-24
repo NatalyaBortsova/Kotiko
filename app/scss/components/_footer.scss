@@ -1,0 +1,61 @@
+.footer {
+    padding: 34px 0 30px;
+
+    @include r(375) {
+        padding: 20px 0;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+
+        @include r(375) {
+            justify-content: center;
+        }
+    }
+
+    &__copy {
+        color: #28AFC9;
+    }
+
+    &__list {
+        display: flex;
+        font-size: 13px;
+        font-weight: 600;
+
+        @include r(768) {
+            display: block;
+        }
+
+        @include r(375) {
+            font-size: 0;
+        }
+
+    }
+
+    &__item {
+        transition: color 0.5s;
+
+        &:not(:last-child) {
+            margin-right: 40px;
+
+            @include r(992) {
+                margin-right: 10px;
+            }
+
+            @include r(768) {
+                margin: 0 0 10px 0;
+            }
+        }
+
+        &:hover {
+            color: $accend;
+        }
+    }
+
+    &__link {
+        @include r(768) {
+            padding: 10px;
+        }
+    }
+}

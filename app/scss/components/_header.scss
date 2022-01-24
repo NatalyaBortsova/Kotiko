@@ -1,0 +1,673 @@
+.header {
+    position: relative;
+
+    &__bg {
+        position: absolute;
+        bottom: 90px;
+        right: 0;
+        width: 370px;
+        height: 384px;
+        z-index: -1;
+        @include r(1230) {
+            bottom: 77px;
+        }
+        @include r(1024) {
+            bottom: 96px;
+            width: 300px;
+            height: 312px;
+        }
+
+        @include r(992) {
+            display: none;
+        }
+
+        &_bottom {
+            width: 834px;
+            height: 370px;
+            bottom: -78px;
+            right: 0;
+
+            @include r(1230) {
+                display: none;
+            }
+        }
+    }
+
+    .scrolltop {
+        position: fixed;
+        cursor: pointer;
+        left: 50%;
+        bottom: 1%;
+        z-index: 100;
+        opacity: 1;
+        transition: 0.5s;
+
+        &._hide {
+            opacity: 0;
+        }
+
+        &__icon {
+            fill: $accend;
+            width: 50px;
+            height: 50px;
+        }
+
+    }
+
+    &__top {
+        padding: 30px 0 13px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include r(768) {
+            flex-direction: column;
+        }
+    }
+
+    .logo {
+        @include r(768) {
+            margin-bottom: 40px;
+        }
+    }
+
+    .address {
+        position: relative;
+
+        &__list {
+            display: flex;
+            align-items: center;
+
+            @include r(992) {
+                display: block;
+            }
+
+            @include r(768) {
+                margin-bottom: 30px;
+            }
+        }
+
+        &__item {
+            max-width: 180px;
+            padding-left: 28px;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 1;
+            position: relative;
+            cursor: pointer;
+            transition: color 0.5s;
+
+            &:not(:last-child) {
+                margin-right: 30px;
+
+                @include r(1230) {
+                    margin-right: 15px;
+                }
+
+                @include r(768) {
+                    margin-right: 0;
+
+                    &:not(:last-child) {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+
+            &:hover {
+                color: $accend;
+            }
+
+            &_schedule {
+                &::before {
+                    @include pseudo;
+                    background-image: url('../../images/icons/clock.svg');
+                    width: 25px;
+                    height: 25px;
+                    top: -6px;
+                    left: 0;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+
+                    @include r(992) {
+                        top: 0;
+                        left: 0;
+                    }
+
+                    @include r(768) {
+                        top: -15px;
+                        left: 72px;
+                    }
+                }
+            }
+
+            @include r(992) {
+                padding: 10px 0 10px 28px;
+            }
+        }
+
+        &__decor {
+            &_large {
+                position: absolute;
+                top: -35px;
+                left: -50px;
+
+                @include r(992) {
+                    top: -10px;
+                    left: -100px;
+                }
+
+                @include r(580) {
+                    top: 0;
+                    left: 0;
+                }
+            }
+
+            &_medium {
+                position: absolute;
+                right: 90px;
+                bottom: -20px;
+
+                @include r(992) {
+                    bottom: 0;
+                    right: -50px;
+                }
+
+                @include r(580) {
+                    top: 100px;
+                    left: 100px;
+                }
+            }
+
+            &_small {
+                position: absolute;
+                right: -130px;
+
+                @include r(992) {
+                    right: -180px;
+                    top: 40px;
+                }
+
+                @include r(580) {
+                    top: 160px;
+                    left: -12px;
+                }
+            }
+        }
+
+        &__link {
+            position: relative;
+            cursor: pointer;
+
+            &::before {
+                @include pseudo;
+                top: 0;
+                left: -27px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+
+                @include r(992) {
+                    top: 11px;
+                    left: -25px;
+                }
+
+                @include r(768) {
+                    top: 0;
+                    left: 45px;
+                }
+            }
+
+            @include r(992) {
+                padding: 10px 0;
+            }
+
+            @include r(768) {
+                padding: 25px 0 10px;
+            }
+
+            &_location {
+                &::before {
+                    background-image: url('../../images/icons/location.svg');
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+
+            &_phone {
+                &::before {
+                    background-image: url('../../images/icons/phone.svg');
+                    width: 25px;
+                    height: 25px;
+                    top: -6px;
+
+                    @include r(992) {
+                        top: 6px;
+                    }
+
+                    @include r(768) {
+                        top: 0;
+                        left: 45px;
+                    }
+                }
+            }
+        }
+    }
+
+    .connect-button {
+        font-size: 16px;
+        line-height: 1.4;
+        color: $white;
+
+        @include r(768) {
+            margin-bottom: 30px;
+        }
+
+        &__link {
+            padding: 19px 30px 19px 71px;
+            position: relative;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: block;
+
+            &::before {
+                @include pseudo;
+                width: 30px;
+                height: 30px;
+                padding: 7px;
+                top: 14px;
+                left: 36px;
+                background-image: url('../../images/icons/instagram.svg');
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        position: relative;
+        margin-right: -70px;
+
+        @include r(992) {
+            margin-right: 0;
+            padding-bottom: 40px;
+        }
+
+        @include r(768) {
+            display: block;
+            padding-bottom: 30px;
+        }
+
+        .menu {
+            flex-basis: 551px;
+            margin-right: 32px;
+
+            @include r(1230) {
+                flex-basis: 581px;
+            }
+
+            @include r(768) {
+                margin-right: 0px;
+            }
+
+            &__list {
+                color: $white;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 1.2;
+
+                @include r(580) {
+                    font-size: 15px;
+                }
+            }
+
+            &__inner {
+                position: relative;
+
+                @include r(768) {
+                    max-width: 380px;
+                    margin: 0 auto;
+                }
+
+                @include r(580) {
+                    max-width: 300px;
+                }
+
+                @include r(360) {
+                    max-width: 249px;
+                }
+            }
+
+            &__image {
+                width: 380px;
+                height: 380px;
+
+                &-guarantee {
+                    position: absolute;
+                    bottom: -120px;
+
+                    @include r(992) {
+                        display: none;
+                    }
+                }
+
+                @include r(580) {
+                    width: 300px;
+                    height: 300px;
+                }
+
+                @include r(360) {
+                    width: 249px;
+                    height: 249px;
+                }
+            }
+
+            &__item {
+                transition: color 0.5s;
+
+                &-subtitle {
+                    font-weight: 500;
+                    font-size: 16px;
+
+
+                    @include r(580) {
+                        font-size: 12px;
+                    }
+
+                    &_booking {
+                        font-size: 9px;
+                        word-wrap: break-word;
+                        max-width: 50px;
+                    }
+
+                    &_video {
+                        font-size: 10px;
+                    }
+                }
+
+                &:hover {
+                    color: $accend;
+                }
+
+
+                &_numbers {
+                    position: absolute;
+                    top: 183px;
+                    left: 14px;
+                    transform: rotate(-31deg);
+                    max-width: 84px;
+                    text-align: center;
+                    line-height: 0.8;
+                    @include line-clamp(2);
+
+                    @include r(580) {
+                        top: 148px;
+                        left: 11px;
+                        max-width: 64px;
+                    }
+
+                    @include r(360) {
+                        top: 124px;
+                        left: 3px;
+                        max-width: 64px;
+                    }
+                }
+
+                &_booking {
+                    position: absolute;
+                    top: 60px;
+                    left: 75px;
+                    transform: rotate(-20deg);
+                    max-width: 84px;
+                    text-align: center;
+                    line-height: 0.8;
+                    @include line-clamp(4);
+
+                    @include r(580) {
+                        top: 48px;
+                        left: 63px;
+                        max-width: 64px;
+                    }
+
+                    @include r(360) {
+                        top: 39px;
+                        left: 49px;
+                        word-wrap: break-word;
+                        max-width: 57px;
+                    }
+                }
+
+                &_video {
+                    position: absolute;
+                    top: 35px;
+                    left: 190px;
+                    max-width: 84px;
+                    text-align: center;
+                    line-height: 0.8;
+                    @include line-clamp(3);
+
+                    @include r(580) {
+                        left: 141px;
+                    }
+
+                    @include r(360) {
+                        left: 126px;
+                        top: 30px;
+                        word-wrap: break-word;
+                        max-width: 53px;
+                    }
+                }
+
+                &_payment {
+                    position: absolute;
+                    top: 139px;
+                    left: 285px;
+                    max-width: 84px;
+                    font-size: 17px;
+                    transform: rotate(25deg);
+                    
+
+                    @include r(580) {
+                        font-size: 14px;
+                        top: 110px;
+                        left: 223px;
+                    }
+
+                    @include r(360) {
+                        font-size: 13px;
+                        top: 87px;
+                        left: 182px;
+                    }
+                }
+
+                &_about {
+                    position: absolute;
+                    top: 207px;
+                    left: 149px;
+                    max-width: 114px;
+                    font-size: 40px;
+                    transform: rotate(-15deg);
+                    text-align: center;
+
+                    @include r(580) {
+                        font-size: 24px;
+                        top: 180px;
+                        left: 110px;
+                    }
+
+                    @include r(360) {
+                        top: 150px;
+                        left: 86px;
+                    }
+                }
+            }
+        }
+
+        .registration {
+            padding-top: 54px;
+            position: relative;
+
+            @include r(992) {
+                flex-basis: min-content;
+            }
+
+            @include r(768) {
+                padding-top: 50px;
+            }
+
+            @include r(360) {
+                padding-top: 30px;
+            }
+
+            &__title {
+                margin-bottom: 20px;
+
+                @include r(768) {
+                    margin-bottom: 30px;
+                }
+            }
+
+            &__subtitle {
+                font-size: 18px;
+                line-height: 1.4;
+                margin-bottom: 35px;
+                font-weight: 400;
+
+                @include r(992) {
+                    margin-bottom: 20px;
+                }
+
+                &_hidden {
+                    display: none;
+
+                    @include r(992) {
+                        display: block;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            &__form {
+                @include r(992) {
+                    display: none;
+                }
+            }
+
+            &__input {
+                display: block;
+                border-bottom: 1px solid $text;
+                padding: 0 12px 12px 0;
+
+                &::placeholder {
+                    color: #848484;
+                    font-size: 16px;
+                    line-height: 1.4;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+            }
+
+            &__feedback {
+                display: block;
+                color: #ff2400;
+                font-size: 12px;
+                position: relative;
+                top: -26px;
+            }
+
+            &__message {
+                position: absolute;
+                top: 60%;
+                padding: 50px 10px;
+                max-width: 500px;
+                line-height: 2;
+                border-radius: 25px;
+                text-align: center;
+                font-weight: 600;
+                font-size: 25px;
+                background-color: $white;
+                opacity: 0.8;
+
+                &.hidden {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .advantages {
+        padding-top: 80px;
+
+        @include r(992) {
+            padding-top: 0;
+        }
+
+        &__list {
+            display: flex;
+
+            @include r(992) {
+                justify-content: space-between;
+            }
+
+            @include r(768) {
+                display: block;
+            }
+        }
+
+        &__item {
+            position: relative;
+            padding-left: 65px;
+
+            &:nth-child(1) {
+                margin-right: 75px;
+                flex-basis: 315px;
+
+                @include r(992) {
+                    margin-right: 0;
+                }
+            }
+
+            &:nth-child(2) {
+                margin-right: 67px;
+                flex-basis: 247px;
+
+                @include r(992) {
+                    margin-right: 0;
+                }
+            }
+
+            &:nth-child(3) {
+                margin-right: 67px;
+                flex-basis: 270px;
+
+                @include r(992) {
+                    margin-right: 0;
+                }
+            }
+
+            &:not(:last-child) {
+                @include r(768) {
+                    margin-bottom: 20px;
+                }
+            }
+
+            &::before {
+                @include pseudo;
+                width: 45px;
+                height: 45px;
+                top: 0;
+                left: 0;
+                background-image: url('../../images/icons/heart.svg');
+                background-size: cover;
+
+                @include r(768) {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+
+        }
+    }
+}
