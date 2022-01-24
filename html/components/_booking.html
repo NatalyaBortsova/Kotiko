@@ -1,0 +1,40 @@
+<section class="booking" id="booking">
+    <div class="container">
+        <h2 class="booking__title title _anim-items">
+            Заявка на бронирование
+        </h2>
+        <div class="booking__content">
+            <div class="booking__image">
+                <img class="booking__img" src="../../images/decor/cat-booking.png" alt="котик" width="276" height="215">
+            </div>
+
+            <div class="booking__submit">
+                <form class="booking__form" action="#">
+                    <div class="booking__inputs">
+                        <input class="booking__input" type="text" id="bookName" name="nameBook" placeholder="Имя" required minlength="3" maxlength="12">
+                        <input class="booking__input" type="text" id="bookDateFrom" name="datefrom"
+                            placeholder="Дата заезда" required>
+                    </div>
+                    <div class="booking__inputs">
+                        <input class="booking__input" type="text" id="bookPhone" name="phoneBook" data-name='validate-phone' placeholder="Телефон"
+                            required>
+                        <input class="booking__input" type="text" id="bookDateTo" name="dateto"
+                            placeholder="Дата выезда" required>
+                    </div>
+                    <div class="booking__inputs">
+                        <input class="booking__input" type="text" id="nickname" name="nickname"
+                            placeholder="Кличка животного">
+                        <input class="booking__input" type="text" id="typeNumber" name="typenum"
+                            placeholder="Тип номера">
+                    </div>
+                    <textarea class="booking__input booking__input_textarea" name="comments" id="comments"
+                        placeholder="Примечание"></textarea>
+                    <button class="booking__button button" type="submit">Забронировать</button>
+                </form>
+            </div>
+            
+        </div>
+        
+
+    </div>
+</section>
